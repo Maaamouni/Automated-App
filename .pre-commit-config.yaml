@@ -7,3 +7,5 @@ repos:
       - id: check-yaml
       - id: check-merge-conflict
       - id: check-json
+
+exclude: node_modules|dist|build
