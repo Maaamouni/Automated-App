@@ -1,0 +1,13 @@
+node_modules
+dist
+.git
+.gitignore
+.github
+.pre-commit-config.yaml
+.eslintrc*
+.vscode
+*.log
+README.md
+Dockerfile
+docker-compose.yml
+prometheus.yml
