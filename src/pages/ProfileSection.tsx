@@ -50,7 +50,7 @@ export function ProfileSection() {
 
       {/* Background */}
       <div className="space-y-6">
-        <p className="section-label">BACKGROUND</p>
+        <p className="section-label">EDUCATION</p>
         <ul className="space-y-5">
           {background.map((entry) => (
             <li

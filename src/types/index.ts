@@ -1,6 +1,6 @@
 // Core domain types for the portfolio app
 
-export type SectionId = "profile" | "skills" | "interests" | "contact";
+export type SectionId = "profile" | "skills" | "projects" | "contact";
 
 export interface NavItem {
   id: SectionId;

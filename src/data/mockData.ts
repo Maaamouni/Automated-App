@@ -3,7 +3,7 @@ import type { Profile, SkillCategory, Projects, SocialLink, NavItem } from "@/ty
 export const navItems: NavItem[] = [
   { id: "profile", index: 1, label: "PROFILE", icon: "User", href: "#profile" },
   { id: "skills", index: 2, label: "SKILLS", icon: "Layers", href: "#skills" },
-  { id: "interests", index: 3, label: "INTERESTS", icon: "Zap", href: "#interests" },
+  { id: "projects", index: 3, label: "PROJECTS", icon: "Zap", href: "#project" },
   { id: "contact", index: 4, label: "CONTACT", icon: "Mail", href: "#contact" },
 ];
 
@@ -45,9 +45,10 @@ export const skillCategories: SkillCategory[] = [
     description:
       "Platform engineering and site reliability — from container orchestration to zero-downtime deployments.",
     skills: [
-      { name: "Kubernetes", icon: "Box", level: 92 },
-      { name: "Terraform", icon: "Code", level: 88 },
-      { name: "Docker", icon: "Container", level: 95 },
+      { name: "Programming Language: JavaScript, Java", icon: "Code", level: 90 },
+      { name: "Git", icon: "Code", level: 92 },
+      { name: "Linux", icon: "Code", level: 95 },
+      { name: "Docker", icon: "Container", level: 80 },
       { name: "GitHub Actions / ArgoCD", icon: "GitBranch", level: 85 },
       { name: "Prometheus + Grafana", icon: "LineChart", level: 80 },
       { name: "AWS / GCP", icon: "Cloud", level: 83 },
@@ -61,8 +62,8 @@ export const skillCategories: SkillCategory[] = [
     description:
       "Building production LLM systems — from agentic frameworks and RAG pipelines to evals and observability.",
     skills: [
-      { name: "Python / PyTorch", icon: "Code", level: 90 },
-      { name: "LangGraph / LlamaIndex", icon: "Workflow", level: 85 },
+      { name: "Scikit-learn / PyTorch", icon: "Code", level: 90 },
+      { name: "LangGraph / LangChain", icon: "Workflow", level: 85 },
       { name: "Vector DBs (pgvector, Weaviate)", icon: "Database", level: 82 },
       { name: "Claude / GPT APIs", icon: "Sparkles", level: 92 },
       { name: "Evals & Guardrails", icon: "ShieldCheck", level: 78 },
@@ -88,7 +89,7 @@ export const skillCategories: SkillCategory[] = [
   },
 ];
 
-export const interests: Projects[] = [
+export const projects: Projects[] = [
   {
     id: "project1",
     icon: "Server",
@@ -119,7 +120,6 @@ export const interests: Projects[] = [
     description:
       "I usually play CTFs and study vulnerabilities.",
     links: [
-      { label: "HackTheBox", href: "https://www.hackthebox.com/" },
       { label: "Rootme", href: "https://www.root-me.org/maamouni?lang=en#12d6f228d3d7552ef52e8d3fa31952ef" },
     ],
   },
@@ -141,22 +141,9 @@ export const interests: Projects[] = [
     iconColor: "#34d399",
     title: "Reading & Learning",
     description:
-      "Currently reading: The Art of Invisibility, Designing Distributed Systems, and Attention is All You Need (again). I learn best by writing and explaining.",
+      "There are many resources I'm currently exploring. In my github profile, I share projects I'm working on, check the link below for more.",
     links: [
-      { label: "Goodreads", href: "https://www.goodreads.com/" },
-      { label: "Pocket queue", href: "https://getpocket.com/" },
-    ],
-  },
-  {
-    id: "oss",
-    icon: "Flame",
-    iconColor: "#fb923c",
-    title: "Open Source",
-    description:
-      "I maintain a handful of small security tooling projects and contribute to Kubernetes sig-security. Open source isn't charity — it's the operating system of modern infrastructure.",
-    links: [
-      { label: "GitHub", href: "https://github.com/" },
-      { label: "K8s sig-security", href: "https://github.com/kubernetes/sig-security" },
+      { label: "Maaamouni", href: "https://www.github.com/Maaamouni" },
     ],
   },
 ];
