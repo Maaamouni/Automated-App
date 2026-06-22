@@ -35,6 +35,14 @@ export const profileData: Profile = {
       organization: "Faculty of Sciences and Techniques of Fez (FST Fez), Morocco",
     },
   ],
+  experience: [
+    { period: "July 2025",
+      role: "IT Intern",
+      organization: "ONCF, Rabat, Morocco",
+      description:
+        "Simulation and design of local networks using Cisco Packet Tracer\nConfiguration and administration of Cisco switches via PuTTY\nDeployment of an IPSec VPN with pfSense to secure inter-site communications",
+      }
+  ],
 };
 
 export const skillCategories: SkillCategory[] = [

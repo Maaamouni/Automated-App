@@ -3,7 +3,7 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { profileData } from "@/data/mockData";
 
 export function ProfileSection() {
-  const { headline, bio, location, availability, currentWork, stats, background } = profileData;
+  const { headline, bio, location, availability, currentWork, stats, background, experience } = profileData;
   const [headStart] = headline.split(/(intelligent systems\.)/i);
   const highlightIndex = headline.toLowerCase().indexOf("intelligent systems");
 
@@ -53,6 +53,24 @@ export function ProfileSection() {
         <p className="section-label">EDUCATION</p>
         <ul className="space-y-5">
           {background.map((entry) => (
+            <li
+              key={`${entry.period}-${entry.role}`}
+              className="grid grid-cols-1 md:grid-cols-[160px_1fr] gap-2 md:gap-6"
+            >
+              <p className="text-xs font-mono text-text-muted">{entry.period}</p>
+              <div>
+                <p className="text-white font-medium">{entry.role}</p>
+                <p className="text-sm text-text-secondary">{entry.organization}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+      {/** */}
+      <div className="space-y-6">
+        <p className="section-label">EXPERIENCE</p>
+        <ul className="space-y-5">
+          {experience.map((entry) => (
             <li
               key={`${entry.period}-${entry.role}`}
               className="grid grid-cols-1 md:grid-cols-[160px_1fr] gap-2 md:gap-6"
