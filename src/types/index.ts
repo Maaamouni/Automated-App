@@ -22,6 +22,7 @@ export interface Profile {
   currentWork: string;
   stats: StatItem[];
   background: BackgroundEntry[];
+  experience: ExperienceEntry[];
 }
 
 export interface StatItem {
@@ -33,6 +34,13 @@ export interface BackgroundEntry {
   period: string;
   role: string;
   organization: string;
+}
+
+export interface ExperienceEntry {
+  period: string;
+  role: string;
+  organization: string;
+  description: string;
 }
 
 export interface SkillCategory {
