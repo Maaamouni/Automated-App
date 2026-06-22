@@ -40,7 +40,7 @@ export interface ExperienceEntry {
   period: string;
   role: string;
   organization: string;
-  description: string;
+  description: string[];
 }
 
 export interface SkillCategory {
