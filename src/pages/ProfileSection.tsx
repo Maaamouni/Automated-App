@@ -68,22 +68,38 @@ export function ProfileSection() {
       </div>
       {/** */}
       <div className="space-y-6">
-        <p className="section-label">EXPERIENCE</p>
-        <ul className="space-y-5">
+       <p className="section-label">EXPERIENCE</p>
+
+        <div className="space-y-8">
           {experience.map((entry) => (
-            <li
-              key={`${entry.period}-${entry.role}`}
-              className="grid grid-cols-1 md:grid-cols-[160px_1fr] gap-2 md:gap-6"
-            >
-              <p className="text-xs font-mono text-text-muted">{entry.period}</p>
-              <div>
-                <p className="text-white font-medium">{entry.role}</p>
-                <p className="text-sm text-text-secondary">{entry.organization}</p>
-              </div>
-            </li>
-          ))}
-        </ul>
+            <div key={`${entry.period}-${entry.role}`} className="space-y-2">
+
+        {/* Header */}
+          <div className="flex justify-between items-start flex-wrap gap-2">
+            <h3 className="text-lg font-semibold text-white">
+              {entry.role}
+            </h3>
+
+            <span className="text-sm font-mono text-text-muted">
+              {entry.period}
+            </span>
+          </div>
+
+        {/* Company */}
+          <p className="text-sm text-text-secondary">
+            {entry.organization}
+          </p>
+
+        {/* Description */}
+          <ul className="list-disc list-inside space-y-1 text-sm leading-relaxed text-text-secondary">
+            {entry.description.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        </div>
+        ))}
       </div>
+    </div>
     </section>
   );
 }
