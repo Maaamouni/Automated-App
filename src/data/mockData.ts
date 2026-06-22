@@ -39,13 +39,9 @@ export const profileData: Profile = {
     { period: "July 2025",
       role: "IT Intern",
       organization: "ONCF, Rabat, Morocco",
-      description:[
-      "Simulated and designed local area networks (LANs) using Cisco Packet Tracer.",
-      "Configured and administered Cisco switches via PuTTY.",
-      "Implemented an IPSec VPN with pfSense to secure communications between remote sites."
-    ]
-
-    }
+      description:
+        "Simulation and design of local networks using Cisco Packet Tracer\nConfiguration and administration of Cisco switches via PuTTY\nDeployment of an IPSec VPN with pfSense to secure inter-site communications",
+      }
   ],
 };
 
